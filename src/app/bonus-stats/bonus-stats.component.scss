@@ -1,0 +1,12 @@
+.bonus-stats {
+  display: block;
+  min-height: 34px;
+  margin-bottom: 5px;
+  position: relative;
+  background: url('~/assets/background_dark.png');
+  border: 1px solid transparent;
+  border-image: url('~/assets/input_border.png') 1;
+  border-image-width: 1px;
+  padding: 5px;
+  text-align: center;
+}
