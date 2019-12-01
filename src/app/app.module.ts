@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
@@ -29,7 +30,7 @@ import { InfoboxComponent } from './infobox/infobox.component';
     MainMenuComponent,
     InfoboxComponent
   ],
-  imports: [BrowserModule, FontAwesomeModule, NgbModule],
+  imports: [BrowserModule, HttpClientModule, FontAwesomeModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent]
 })
