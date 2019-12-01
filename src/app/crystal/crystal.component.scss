@@ -1,5 +1,5 @@
 .crystal {
-  display: block;
+  display: flex;
   min-height: 34px;
   margin-bottom: 5px;
   position: relative;
@@ -29,7 +29,10 @@
     width: 30px;
   }
 
-  > span {
+  > div {
+    display: inline-flex;
+    flex-direction: column;
     margin-left: 5px;
+    padding-top: 2px;
   }
 }
