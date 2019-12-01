@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation, HostListener } from '@angular/core';
 
 @Component({
   selector: 'us-crystal',
@@ -8,9 +8,18 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 export class CrystalComponent implements OnInit {
   @Input() name: string;
-  @Input() sprite: string;
+  @Input() itemId: string;
   @Input() description: string;
+  @Input() uses = 0;
+  @Input() usable = true;
+
   constructor() {}
 
   ngOnInit() {}
+
+  @HostListener('click') onclick() {
+    if (this.usable) {
+      this.uses++;
+    }
+  }
 }
